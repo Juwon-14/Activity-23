@@ -7,21 +7,20 @@
 
 #include <iostream>
 #include <string>
-#include "customer.h" 
-
-using namespace std;
+#include "customer.h"
 
 int main() {
-    string input;
+    std::string input;
 
-    cout << "Enter a customer number: ";
-    cin >> input;
+    std::cout << "Enter a customer number: ";
+    std::cin >> input;
 
     if (CustomerNumberFormat(input)) {
-        cout << "Valid customer number." << endl;
+        std::cout << "Valid customer number." << std::endl;
     } else {
-        cout << "Invalid customer number." << endl;
+        std::cout << "Invalid customer number." << std::endl;
     }
 
     return 0;
 }
+
